@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VertifyCodeView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VertifyCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCp-oP-elR">
+                    <rect key="frame" x="28" y="50" width="319" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ohm-IU-fwI" customClass="CJTextField">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="Ejo-iF-nFr"/>
+                                <constraint firstAttribute="height" constant="44" id="kDp-JE-nB9"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-af-miH" customClass="CJTextField">
+                            <rect key="frame" x="55" y="0.0" width="44" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xvs-ce-s5L" customClass="CJTextField">
+                            <rect key="frame" x="110" y="0.0" width="44" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQN-tL-HQZ" customClass="CJTextField">
+                            <rect key="frame" x="165" y="0.0" width="44" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7gq-WQ-L9g" customClass="CJTextField">
+                            <rect key="frame" x="220" y="0.0" width="44" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tA7-zk-GHW" customClass="CJTextField">
+                            <rect key="frame" x="275" y="0.0" width="44" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ohm-IU-fwI" firstAttribute="top" secondItem="vCp-oP-elR" secondAttribute="top" id="0Ke-G0-tvu"/>
+                        <constraint firstItem="7gq-WQ-L9g" firstAttribute="width" secondItem="zQN-tL-HQZ" secondAttribute="width" id="0ca-GX-TbZ"/>
+                        <constraint firstItem="Xvs-ce-s5L" firstAttribute="leading" secondItem="3c2-af-miH" secondAttribute="trailing" constant="11" id="4Rv-gu-R0I"/>
+                        <constraint firstAttribute="width" constant="319" id="8Ty-jK-ePF"/>
+                        <constraint firstItem="zQN-tL-HQZ" firstAttribute="leading" secondItem="Xvs-ce-s5L" secondAttribute="trailing" constant="11" id="Bpm-RB-yDf"/>
+                        <constraint firstItem="3c2-af-miH" firstAttribute="width" secondItem="Ohm-IU-fwI" secondAttribute="width" id="NAn-mN-p4g"/>
+                        <constraint firstItem="7gq-WQ-L9g" firstAttribute="top" secondItem="zQN-tL-HQZ" secondAttribute="top" id="SRd-yT-9JL"/>
+                        <constraint firstItem="3c2-af-miH" firstAttribute="leading" secondItem="Ohm-IU-fwI" secondAttribute="trailing" constant="11" id="Siy-XW-8s1"/>
+                        <constraint firstItem="tA7-zk-GHW" firstAttribute="leading" secondItem="7gq-WQ-L9g" secondAttribute="trailing" constant="11" id="Wfc-0J-Gib"/>
+                        <constraint firstItem="Xvs-ce-s5L" firstAttribute="height" secondItem="3c2-af-miH" secondAttribute="height" id="bJz-Nk-Dwc"/>
+                        <constraint firstItem="3c2-af-miH" firstAttribute="height" secondItem="Ohm-IU-fwI" secondAttribute="height" id="d5W-45-GNM"/>
+                        <constraint firstItem="zQN-tL-HQZ" firstAttribute="width" secondItem="Xvs-ce-s5L" secondAttribute="width" id="dMc-pT-ruR"/>
+                        <constraint firstItem="zQN-tL-HQZ" firstAttribute="top" secondItem="Xvs-ce-s5L" secondAttribute="top" id="fTz-vv-hXN"/>
+                        <constraint firstAttribute="height" constant="44" id="gPS-Wu-Upv"/>
+                        <constraint firstItem="zQN-tL-HQZ" firstAttribute="height" secondItem="Xvs-ce-s5L" secondAttribute="height" id="hnQ-Cm-EBk"/>
+                        <constraint firstItem="tA7-zk-GHW" firstAttribute="height" secondItem="7gq-WQ-L9g" secondAttribute="height" id="kFV-m1-JDz"/>
+                        <constraint firstItem="Ohm-IU-fwI" firstAttribute="leading" secondItem="vCp-oP-elR" secondAttribute="leading" id="mrK-PN-O0b"/>
+                        <constraint firstItem="tA7-zk-GHW" firstAttribute="top" secondItem="7gq-WQ-L9g" secondAttribute="top" id="mrx-hi-git"/>
+                        <constraint firstItem="tA7-zk-GHW" firstAttribute="width" secondItem="7gq-WQ-L9g" secondAttribute="width" id="p18-K3-wmb"/>
+                        <constraint firstItem="Xvs-ce-s5L" firstAttribute="width" secondItem="3c2-af-miH" secondAttribute="width" id="pK1-yg-2lR"/>
+                        <constraint firstItem="3c2-af-miH" firstAttribute="top" secondItem="Ohm-IU-fwI" secondAttribute="top" id="uhe-rf-LcG"/>
+                        <constraint firstItem="Xvs-ce-s5L" firstAttribute="top" secondItem="3c2-af-miH" secondAttribute="top" id="xh2-w3-KIk"/>
+                        <constraint firstItem="7gq-WQ-L9g" firstAttribute="leading" secondItem="zQN-tL-HQZ" secondAttribute="trailing" constant="11" id="xuI-bL-H2D"/>
+                        <constraint firstItem="7gq-WQ-L9g" firstAttribute="height" secondItem="zQN-tL-HQZ" secondAttribute="height" id="yNF-4g-4Po"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vCp-oP-elR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="0AD-gt-Dm1"/>
+                <constraint firstItem="vCp-oP-elR" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zMu-DG-a30"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>

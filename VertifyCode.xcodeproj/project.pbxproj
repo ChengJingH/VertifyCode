@@ -15,6 +15,9 @@
 		E8D80F332266BFC9004892D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D80F322266BFC9004892D8 /* main.m */; };
 		E8D80F3D2266BFCA004892D8 /* VertifyCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D80F3C2266BFCA004892D8 /* VertifyCodeTests.m */; };
 		E8D80F482266BFCA004892D8 /* VertifyCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D80F472266BFCA004892D8 /* VertifyCodeUITests.m */; };
+		E8D80F582266C003004892D8 /* VertifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D80F572266C003004892D8 /* VertifyCodeView.m */; };
+		E8D80F5A2266C010004892D8 /* VertifyCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8D80F592266C010004892D8 /* VertifyCodeView.xib */; };
+		E8D80F5D2266CB76004892D8 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D80F5C2266CB76004892D8 /* CJTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		E8D80F432266BFCA004892D8 /* VertifyCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VertifyCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D80F472266BFCA004892D8 /* VertifyCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VertifyCodeUITests.m; sourceTree = "<group>"; };
 		E8D80F492266BFCA004892D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D80F562266C003004892D8 /* VertifyCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertifyCodeView.h; sourceTree = "<group>"; };
+		E8D80F572266C003004892D8 /* VertifyCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VertifyCodeView.m; sourceTree = "<group>"; };
+		E8D80F592266C010004892D8 /* VertifyCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VertifyCodeView.xib; sourceTree = "<group>"; };
+		E8D80F5B2266CB76004892D8 /* CJTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
+		E8D80F5C2266CB76004892D8 /* CJTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		E8D80F172266BFC8004892D8 = {
 			isa = PBXGroup;
 			children = (
+				E8D80F552266BFD3004892D8 /* VertifyCodeModule */,
 				E8D80F222266BFC8004892D8 /* VertifyCode */,
 				E8D80F3B2266BFC9004892D8 /* VertifyCodeTests */,
 				E8D80F462266BFCA004892D8 /* VertifyCodeUITests */,
@@ -130,6 +139,18 @@
 				E8D80F492266BFCA004892D8 /* Info.plist */,
 			);
 			path = VertifyCodeUITests;
+			sourceTree = "<group>";
+		};
+		E8D80F552266BFD3004892D8 /* VertifyCodeModule */ = {
+			isa = PBXGroup;
+			children = (
+				E8D80F562266C003004892D8 /* VertifyCodeView.h */,
+				E8D80F572266C003004892D8 /* VertifyCodeView.m */,
+				E8D80F592266C010004892D8 /* VertifyCodeView.xib */,
+				E8D80F5B2266CB76004892D8 /* CJTextField.h */,
+				E8D80F5C2266CB76004892D8 /* CJTextField.m */,
+			);
+			path = VertifyCodeModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +259,7 @@
 				E8D80F302266BFC9004892D8 /* LaunchScreen.storyboard in Resources */,
 				E8D80F2D2266BFC9004892D8 /* Assets.xcassets in Resources */,
 				E8D80F2B2266BFC8004892D8 /* Main.storyboard in Resources */,
+				E8D80F5A2266C010004892D8 /* VertifyCodeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +287,8 @@
 				E8D80F282266BFC8004892D8 /* ViewController.m in Sources */,
 				E8D80F332266BFC9004892D8 /* main.m in Sources */,
 				E8D80F252266BFC8004892D8 /* AppDelegate.m in Sources */,
+				E8D80F5D2266CB76004892D8 /* CJTextField.m in Sources */,
+				E8D80F582266C003004892D8 /* VertifyCodeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E96A3MNGLQ;
 				INFOPLIST_FILE = VertifyCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E96A3MNGLQ;
 				INFOPLIST_FILE = VertifyCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
