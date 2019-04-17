@@ -1,4 +1,4 @@
 # VertifyCode
 
-六位验证码
+UITextfield 六位验证码视图
 
